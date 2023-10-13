@@ -32,6 +32,8 @@ export default function TodosAleatorios() {
     ])
   }
 
+  console.log(randomNames)
+
   return (
     <Container>
       <Title>Todos Aleatorios</Title>

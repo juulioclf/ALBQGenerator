@@ -4,7 +4,7 @@ export const Container = styled.body`
   margin-top: 1vw;
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1vw;
   align-items: center;
 `;
 

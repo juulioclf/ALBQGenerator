@@ -2,6 +2,7 @@ import { Button, TextField } from "@mui/material";
 import { BoxNames, BoxTeams, Container, Label, Title } from "./styles";
 import { useState } from "react";
 import ColorToggleButton from "../../components/ToggleBox";
+import DragAndDrop from "../../components/DragAndDrop";
 
 
 export default function Lider() {
@@ -60,17 +61,11 @@ export default function Lider() {
         <BoxTeams>
           {randomLeaders?.length !== 0 && randomLeaders.map((team, index) => (
             <div key={index}>
-              <h1>{team.name}</h1>
+              <h1>time {team.name}</h1>
             </div>
           ))}
         </BoxTeams>
-        <div style={{display: "flex", flexDirection: "row", gap: "1vw", border: "1px solid black", borderRadius: "16px", padding: "16px"}}>
-        {teamates?.length !== 0 && teamates.map((team, index) => (
-          <div key={index}>
-            <button>{team}</button>
-          </div>
-        ))}
-        </div>
+        <DragAndDrop teamates={teamates}/>
       </>
       }
 
